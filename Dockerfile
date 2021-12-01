@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package.json yarn.lock ./
 
-RUN yarn
+RUN yarn && yarn add typescript &&  yarn add @types/react && yarn add @types/react-dom
 
 COPY . ./
 
